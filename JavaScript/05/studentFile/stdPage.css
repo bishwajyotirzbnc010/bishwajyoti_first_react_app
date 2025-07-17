@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(247, 244, 248);
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20%;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 300px;
+    margin: 40px auto;
+    background-color: rgb(200, 185, 243);
+    border-radius: 35px;
+    padding: 20px;
+    box-shadow: 20px 20px 20px rgba(100, 98, 156, 0.767);
+    transition: transform 0.4s, background-color 0.3s;
+}
+
+.container:hover {
+    filter: brightness(105%);
+    transform: scale(1.05);
+}  

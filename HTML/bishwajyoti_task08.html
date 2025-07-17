@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Periodic Table</title>
+    <style>
+      /*General Style*/
+      header,
+      .footer {
+        background: linear-gradient(90deg, #110a03, #a56f3c, #af9671);
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: bold;
+        color: blanchedalmond;
+        padding: 15px 0;
+      }
+
+      .legend {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+
+      .legend div {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .legend div span {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        border: 1px solid #aaa;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0dcd9;
+        text-align: center;
+      }
+
+      table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 90%;
+      }
+
+      td {
+        border: 2px solid #e0dcd9;
+        padding: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+      }
+
+      /*element style*/
+      .alkali-metal {
+        background: linear-gradient(#2e5e5e, #6cdbbf);
+      }
+
+      .alkaline-earth-metal {
+        background: linear-gradient(#5c334e, #c46086);
+      }
+
+      .transition-metal {
+        background: linear-gradient(#6a4897, #9c90be);
+      }
+
+      .lanthanide {
+        background: linear-gradient(#515b94, #af95df);
+      }
+
+      .actinide {
+        background: linear-gradient(#da9311, #dab85b);
+      }
+
+      .metalloid {
+        background: linear-gradient(#a15a30, #db8f76);
+      }
+
+      .metal {
+        background: linear-gradient(#2e8b43, #75c763);
+      }
+
+      .non-metal {
+        background: linear-gradient(#1f3161, #4d6cc4);
+      }
+
+      .noble-gas {
+        background: linear-gradient(#28636e, #1bb1c5);
+      }
+
+      .unknown {
+        background: linear-gradient(#343c44, #89939c);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Modern Periodic Table</h1>
+    </header>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div><span class="alkali-metal"></span> Alkali Metal</div>
+      <div><span class="alkaline-earth-metal"></span> Alkaline Earth Metal</div>
+      <div><span class="transition-metal"></span> Transition Metal</div>
+      <div><span class="metal"></span> Metal</div>
+      <div><span class="non-metal"></span> Non-Metal</div>
+      <div><span class="metalloid"></span> Metalloid</div>
+      <div><span class="noble-gas"></span> Noble Gas</div>
+      <div><span class="lanthanide"></span> Lanthanide</div>
+      <div><span class="actinide"></span> Actinide</div>
+      <div><span class="unknown"></span> Unknown</div>
+    </div>
+
+    <table>
+      <!-- Row 1 -->
+      <tr>
+        <td class="non-metal">H<br />1</td>
+        <td colspan="16"></td>
+        <td class="noble-gas">He<br />2</td>
+      </tr>
+
+      <!-- Row 2 -->
+      <tr>
+        <td class="alkali-metal">Li<br />3</td>
+        <td class="alkaline-earth-metal">Be<br />4</td>
+        <td colspan="10"></td>
+        <td class="metalloid">B<br />5</td>
+        <td class="non-metal">C<br />6</td>
+        <td class="non-metal">N<br />7</td>
+        <td class="non-metal">O<br />8</td>
+        <td class="non-metal">F<br />9</td>
+        <td class="noble-gas">Ne<br />10</td>
+      </tr>
+
+      <!-- Row 3 -->
+      <tr>
+        <td class="alkali-metal">Na<br />11</td>
+        <td class="alkaline-earth-metal">Mg<br />12</td>
+        <td colspan="10"></td>
+        <td class="metal">Al<br />13</td>
+        <td class="metalloid">Si<br />14</td>
+        <td class="non-metal">P<br />15</td>
+        <td class="non-metal">S<br />16</td>
+        <td class="non-metal">Cl<br />17</td>
+        <td class="noble-gas">Ar<br />18</td>
+      </tr>
+
+      <!-- Row 4 -->
+      <tr>
+        <td class="alkali-metal">K<br />19</td>
+        <td class="alkaline-earth-metal">Ca<br />20</td>
+        <td class="transition-metal">Sc<br />21</td>
+        <td class="transition-metal">Ti<br />22</td>
+        <td class="transition-metal">V<br />23</td>
+        <td class="transition-metal">Cr<br />24</td>
+        <td class="transition-metal">Mn<br />25</td>
+        <td class="transition-metal">Fe<br />26</td>
+        <td class="transition-metal">Co<br />27</td>
+        <td class="transition-metal">Ni<br />28</td>
+        <td class="transition-metal">Cu<br />29</td>
+        <td class="transition-metal">Zn<br />30</td>
+        <td class="metal">Ga<br />31</td>
+        <td class="metalloid">Ge<br />32</td>
+        <td class="metalloid">As<br />33</td>
+        <td class="non-metal">Se<br />34</td>
+        <td class="non-metal">Br<br />35</td>
+        <td class="noble-gas">Kr<br />36</td>
+      </tr>
+
+      <!-- Row 5 -->
+      <tr>
+        <td class="alkali-metal">Rb<br />37</td>
+        <td class="alkaline-earth-metal">Sr<br />38</td>
+        <td class="transition-metal">Y<br />39</td>
+        <td class="transition-metal">Zr<br />40</td>
+        <td class="transition-metal">Nb<br />41</td>
+        <td class="transition-metal">Mo<br />42</td>
+        <td class="transition-metal">Tc<br />43</td>
+        <td class="transition-metal">Ru<br />44</td>
+        <td class="transition-metal">Rh<br />45</td>
+        <td class="transition-metal">Pd<br />46</td>
+        <td class="transition-metal">Ag<br />47</td>
+        <td class="transition-metal">Cd<br />48</td>
+        <td class="metal">In<br />49</td>
+        <td class="metal">Sn<br />50</td>
+        <td class="metalloid">Sb<br />51</td>
+        <td class="metalloid">Te<br />52</td>
+        <td class="non-metal">I<br />53</td>
+        <td class="noble-gas">Xe<br />54</td>
+      </tr>
+
+      <!-- Row 6 -->
+      <tr>
+        <td class="alkali-metal">Cs<br />55</td>
+        <td class="alkaline-earth-metal">Ba<br />58</td>
+        <td class="lanthanide">57-71</td>
+        <td class="transition-metal">Hf<br />72</td>
+        <td class="transition-metal">Ta<br />73</td>
+        <td class="transition-metal">W<br />74</td>
+        <td class="transition-metal">Re<br />75</td>
+        <td class="transition-metal">Os<br />76</td>
+        <td class="transition-metal">Ir<br />77</td>
+        <td class="transition-metal">Pt<br />78</td>
+        <td class="transition-metal">Au<br />79</td>
+        <td class="transition-metal">Hg<br />80</td>
+        <td class="metal">Tl<br />81</td>
+        <td class="metal">Pb<br />82</td>
+        <td class="metal">Bi<br />83</td>
+        <td class="metal">Po<br />84</td>
+        <td class="metal">At<br />85</td>
+        <td class="noble-gas">Rn<br />86</td>
+      </tr>
+
+      <!-- Row 7 -->
+      <tr>
+        <td class="alkali-metal">Fr<br />87</td>
+        <td class="alkaline-earth-metal">Ra<br />88</td>
+        <td class="actinide">89-103</td>
+        <td class="transition-metal">Rf<br />104</td>
+        <td class="transition-metal">Db<br />105</td>
+        <td class="transition-metal">Sg<br />106</td>
+        <td class="transition-metal">Bh<br />107</td>
+        <td class="transition-metal">Hs<br />108</td>
+        <td class="unknown">Mt<br />109</td>
+        <td class="unknown">Ds<br />110</td>
+        <td class="unknown">Rg<br />111</td>
+        <td class="unknown">Cn<br />112</td>
+        <td class="unknown">Nh<br />113</td>
+        <td class="unknown">Fl<br />114</td>
+        <td class="unknown">Mc<br />115</td>
+        <td class="unknown">Lv<br />116</td>
+        <td class="unknown">Ts<br />117</td>
+        <td class="unknown">Og<br />118</td>
+      </tr>
+    </table>
+
+    <!--Creating_Gap-->
+    <table>
+      <!-- Lanthanides -->
+      <tr>
+        <td colspan="2"></td>
+        <td class="lanthanide">La<br />57</td>
+        <td class="lanthanide">Ce<br />58</td>
+        <td class="lanthanide">Pr<br />59</td>
+        <td class="lanthanide">Nd<br />60</td>
+        <td class="lanthanide">Pm<br />61</td>
+        <td class="lanthanide">Sm<br />62</td>
+        <td class="lanthanide">Eu<br />63</td>
+        <td class="lanthanide">Gd<br />64</td>
+        <td class="lanthanide">Tb<br />65</td>
+        <td class="lanthanide">Dy<br />66</td>
+        <td class="lanthanide">Ho<br />67</td>
+        <td class="lanthanide">Er<br />68</td>
+        <td class="lanthanide">Tm<br />69</td>
+        <td class="lanthanide">Yb<br />70</td>
+        <td class="lanthanide">Lu<br />71</td>
+        <td></td>
+      </tr>
+
+      <!-- Actinides -->
+      <tr>
+        <td colspan="2"></td>
+        <td class="actinide">Ac<br />89</td>
+        <td class="actinide">Th<br />90</td>
+        <td class="actinide">Pa<br />91</td>
+        <td class="actinide">U<br />92</td>
+        <td class="actinide">Np<br />93</td>
+        <td class="actinide">Pu<br />94</td>
+        <td class="actinide">Am<br />95</td>
+        <td class="actinide">Cm<br />96</td>
+        <td class="actinide">Bk<br />97</td>
+        <td class="actinide">Cf<br />98</td>
+        <td class="actinide">Es<br />99</td>
+        <td class="actinide">Fm<br />100</td>
+        <td class="actinide">Md<br />101</td>
+        <td class="actinide">No<br />102</td>
+        <td class="actinide">Lr<br />103</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; IT'S MY TASK | BISHWAJYOTI RAJBANSHI</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Birat</title>
+    <style>
+    body{
+       margin: 5%;
+    }
+
+    .container{
+        width: 100%;
+        height: 80vh;
+        border: solid 1px black;
+        border-radius: 15px;
+        display: flex;
+    }
+
+    .section1{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        height: 78vh;
+        margin: 5px;
+        border: solid 1px black;
+        border-radius: 10px;
+    }
+
+    .section2{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        height: 78vh;
+        margin: 5px;
+        border: solid 1px black;
+        border-radius: 10px;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        border:solid 1px;
+    }
+
+    th{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #name{
+        font-size: 30px;
+        margin-left: 5%;
+        width: 90%;
+        height: 10%;
+        border-radius: 3px;
+    }
+    #type{
+        padding: 5px;
+        margin-left: 5%;
+        width: 90%;
+        height: 10%;
+        border-radius: 3px;
+    }
+    #comment{
+        margin-left: 5%;
+        width: 90%;
+        height: 10vh;
+        border-radius: 3px;
+    }
+
+    button{
+        margin-left: 10%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 80%;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+
+        </div>
+        <div class="section2">
+            <table>
+                
+                <tr>
+                    <th colspan="2">Contact Us</th>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="text">Name:</label>
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="type">Types of enquiry:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <select id="type">
+                        <option value="DILUX ROOM">Dilux Room</option>
+                        <option value="Single Bed ROOM">Single Bed Room</option>
+                        <option value="AC ROOM">Single AC Room</option>
+                        <option value="DILUX SERVICE ROOM">Dilux Hotel Service Room</option>
+                        <option value="COUPLE ROOM">Room For Couple</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Comment">Your Comment</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="textarea" name="text">
+                    </td>
+                </tr>
+                <tr><td>
+                    <button type="submit" name="submit" id="btn">
+                        Send Your Message
+                    </button>
+                </td></tr>
+
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>

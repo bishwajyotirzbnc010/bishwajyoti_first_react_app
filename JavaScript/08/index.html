@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Numbers</title>
+</head>
+<body>
+    
+  <script>
+    var numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    var total = 0;
+
+    console.log("Even numbers from 1 to 20 are:");
+
+    for (var num of numbers) {
+      if (num % 2 === 0) {
+        document.writeln(num+"<br>");
+        total = total + num;
+      }
+    }
+
+    document.writeln("Sum of even numbers is: " + total);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  background: rgb(219, 226, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Greeting Container */
+.container {
+  background: rgb(104, 136, 223);
+  border-radius: 30px;
+  padding: 40px 30px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.363);
+  text-align: center;
+  cursor: pointer;
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+/* Greeting Text */
+#greetingMessage {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #f8f7f7;
+  background: black;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  #greetingMessage {
+    font-size: 1.1rem;
+  }
+}

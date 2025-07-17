@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Operations</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Math Operations</h2>
+    <div class="container">
+      <form onsubmit="return false;">
+        <input
+          type="number"
+          id="a"
+          placeholder="Enter value of a"
+          required
+        /><br />
+        <input
+          type="number"
+          id="b"
+          placeholder="Enter value of b"
+          required
+        /><br />
+        <button onclick="calcSquareOfSum()" class="btn">(a + b)²</button>
+        <button onclick="calcDiffOfSquares()" class="btn">a² - b²</button>
+        <button onclick="calcSumOfCubes()" class="btn">a³ + b³</button>
+      </form>
+      <br />
+      <p id="result"></p>
+    </div>
+  </body>
+</html>

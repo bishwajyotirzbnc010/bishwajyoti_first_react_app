@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+
+    <!--Style-->
+    <style>
+      .head {
+        background: linear-gradient(90deg, #110a03, #705032, #af9671);
+        height: 70px;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: bold;
+        color: blanchedalmond;
+      }
+
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .th {
+        border: 1px solid rgb(214, 107, 7);
+        padding: 8px;
+        text-align: center;
+        background-color: #e7dfd5;
+      }
+
+      .td {
+        border: 1px solid rgb(214, 107, 7);
+        padding: 7px;
+        text-align: center;
+      }
+
+      .footer {
+        background: linear-gradient(90deg, #110a03, #705032, #af9671);
+        height: 40px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: blanchedalmond;
+      }
+
+      .tfoot {
+        font-weight: bold;
+        background-color: #e7dfd5;
+      }
+
+      .tfd {
+        font-weight: bold;
+        border: 1px solid rgb(214, 107, 7);
+        padding: 7px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="head">
+      <h1>HTML TABLE</h1>
+    </header>
+
+    <!--Table-->
+    <table class="table">
+      <!--SN_RAW-->
+      <tr>
+        <th class="th">SN</th>
+        <th class="th">Items</th>
+        <th class="th">Amount<br />Rs.</th>
+        <th class="th">Amount<br />Paisa</th>
+        <th class="th">Quantity</th>
+        <th class="th">Total<br />Rs.</th>
+        <th class="th">Total<br />Paisa</th>
+      </tr>
+
+      <!--Product_RAW-->
+      <tbody>
+        <tr>
+          <td class="td">1</td>
+          <td class="td">Keyboard</td>
+          <td class="td">100</td>
+          <td class="td">25</td>
+          <td class="td">10 pcs</td>
+          <td class="td">1002</td>
+          <td class="td">50</td>
+        </tr>
+        <tr>
+          <td class="td">2</td>
+          <td class="td">Mouse</td>
+          <td class="td">50</td>
+          <td class="td">35</td>
+          <td class="td">10 pcs</td>
+          <td class="td">503</td>
+          <td class="td">50</td>
+        </tr>
+        <tr>
+          <td class="td">3</td>
+          <td class="td">Monitor</td>
+          <td class="td">7500</td>
+          <td class="td">0</td>
+          <td class="td">10 pcs</td>
+          <td class="td">75000</td>
+          <td class="td">00</td>
+        </tr>
+        <tr>
+          <td class="td">4</td>
+          <td class="td">Power Cable</td>
+          <td class="td">150</td>
+          <td class="td">75</td>
+          <td class="td">50 pcs</td>
+          <td class="td">7537</td>
+          <td class="td">50</td>
+        </tr>
+        <tr>
+          <td class="td">5</td>
+          <td class="td">VGA Cable</td>
+          <td class="td">325</td>
+          <td class="td">80</td>
+          <td class="td">50 pcs</td>
+          <td class="td">16290</td>
+          <td class="td">00</td>
+        </tr>
+        <tr>
+          <td class="td">6</td>
+          <td class="td">512 GB SSD</td>
+          <td class="td">7250</td>
+          <td class="td">90</td>
+          <td class="td">35 pcs</td>
+          <td class="td">253781</td>
+          <td class="td">50</td>
+        </tr>
+        <tr>
+          <td class="td">7</td>
+          <td class="td">8 GB RAM</td>
+          <td class="td">3525</td>
+          <td class="td">28</td>
+          <td class="td">44 pcs</td>
+          <td class="td">155112</td>
+          <td class="td">32</td>
+        </tr>
+        <tr>
+          <td class="td">8</td>
+          <td class="td">4 GB RAM</td>
+          <td class="td">2525</td>
+          <td class="td">28</td>
+          <td class="td">33 pcs</td>
+          <td class="td">83334</td>
+          <td class="td">24</td>
+        </tr>
+        <tr>
+          <td class="td">9</td>
+          <td class="td">Intel I5 Processor</td>
+          <td class="td">5565</td>
+          <td class="td">93</td>
+          <td class="td">25 pcs</td>
+          <td class="td">139148</td>
+          <td class="td">65</td>
+        </tr>
+        <tr>
+          <td class="td">10</td>
+          <td class="td">Mini Speaker</td>
+          <td class="td">2200</td>
+          <td class="td">55</td>
+          <td class="td">63 pcs</td>
+          <td class="td">138631</td>
+          <td class="td">50</td>
+        </tr>
+      </tbody>
+
+      <!--Final_RAW-->
+      <tfoot class="tfoot">
+        <tr>
+          <td class="tfd">-</td>
+          <td class="tfd">Gross Total</td>
+          <td class="tfd">-</td>
+          <td class="tfd">-</td>
+          <td class="tfd">-</td>
+          <td class="tfd">870341</td>
+          <td class="tfd">31</td>
+        </tr>
+        <tr>
+          <td class="tfd">-</td>
+          <td class="tfd">13% VAT</td>
+          <td class="tfd">-</td>
+          <td class="tfd">-</td>
+          <td class="tfd">-</td>
+          <td class="tfd">113144</td>
+          <td class="tfd">3703</td>
+        </tr>
+        <tr>
+          <td class="tfd">-</td>
+          <td class="tfd">Grand Total</td>
+          <td class="tfd">-</td>
+          <td class="tfd">-</td>
+          <td class="tfd">-</td>
+          <td class="tfd">983485</td>
+          <td class="tfd">6803</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--Footer-->
+    <footer class="footer">
+      <p>&copy; BIRAT KSHITIZ COLLEGE</p>
+    </footer>
+  </body>
+</html>

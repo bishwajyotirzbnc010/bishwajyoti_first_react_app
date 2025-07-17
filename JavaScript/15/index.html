@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2>Cube Calculator</h2>
+
+    <!-- Form to enter number -->
+    <div class="container">
+      <form onsubmit="return false;">
+        <label for="num">Enter a number:</label><br /><br />
+        <input type="number" id="num" required /><br /><br />
+        <button onclick="calculateCube()" class="btn">Calculate</button>
+      </form>
+    </div>
+    <br /><br />
+    <!-- Result will be shown here -->
+    <p id="result"></p>
+  </body>
+</html>

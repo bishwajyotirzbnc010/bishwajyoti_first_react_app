@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Story Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>About Me</h1>
+      <form onsubmit="generateStory(); return false;">
+        <input type="text" id="fullname" placeholder="Full Name" required />
+
+        <select id="gender">
+          <option value="">Select Gender</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+
+        <input type="number" id="age" placeholder="Age" required />
+        <input type="text" id="hobby" placeholder="Your Hobby" required />
+        <input type="text" id="food" placeholder="Favorite Food" required />
+        <input
+          type="text"
+          id="country"
+          placeholder="Dream Country to Visit"
+          required
+        /><br /><br />
+
+        <button type="submit">Generate Story</button>
+      </form>
+
+      <div id="output"></div>
+    </div>
+  </body>
+</html>

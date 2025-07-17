@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Original array with 20 natural numbers
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+// Use map to return the same values, then filter even numbers
+let evenNumbers = numbers.map(function(num) {
+  return num;
+}).filter(function(num) {
+  return num % 2 === 0;
+});
+
+// Sort the even numbers
+evenNumbers.sort(function(a, b) {
+  return a - b;
+});
+
+// Print the result
+document.writeln("Even numbers:", evenNumbers);
+
+    </script>
+</body>
+</html>
